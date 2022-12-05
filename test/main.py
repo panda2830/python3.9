@@ -42,4 +42,8 @@ print("-" not in a)
 b = "Python3"
 c = "C/C++"
 print(b+"| |"+c)
-# !
+# !字符串处理方法
+str = "ABCABCDDD"
+print(str.center(30))
+print("ABC出现的次数:{}".format(str.count("ABC")))
+print("用-来分隔每个字母{}".format("-".join(str)))

@@ -20,9 +20,9 @@
 # import doctest
 # doctest.testmod()
 
-string_1 = input('输入:')
-
-if 'exit' in string_1:
-    print('true')
-else:
-    eval(string_1 + " = []")
+# string_1 = input('输入:')
+#
+# if 'exit' in string_1:
+#     print('true')
+# else:
+#     eval(string_1 + " = []")

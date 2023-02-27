@@ -2,6 +2,7 @@
 编写一个对列表从小到大排序的函数
 """
 
+# 插入排序
 # def insertionSort(arr):
 #     for i in range(len(arr)):
 #         preIndex = i-1
@@ -16,6 +17,7 @@
 list_1 = [7, 4, 9, 2, 1, 0, 4]
 
 
+# 冒泡排序
 def my_sort(arr):
     for i in range(len(arr)):
         for j in range(i):

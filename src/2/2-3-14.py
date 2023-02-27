@@ -1,3 +1,7 @@
+"""
+编写程序找出任意范围内的素数
+
+"""
 number_1 = int(input('输入最大边界值'))
 flag = False
 for i in range(2, number_1):

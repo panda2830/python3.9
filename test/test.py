@@ -1,3 +1,10 @@
+list_1 = [1,2,3,4,5]
+
+for i in range(len(list_1)):
+    print(i)
+
+
+
 # def average(values):
 #     """Computes the arithmetic mean of a list of numbers.
 #

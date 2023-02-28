@@ -1,9 +1,6 @@
-list_1 = [1,2,3,4,5]
+list_1 = [s for s in range(ord('a'), ord('z'))]
 
-for i in range(len(list_1)):
-    print(i)
-
-
+print(list_s)
 
 # def average(values):
 #     """Computes the arithmetic mean of a list of numbers.

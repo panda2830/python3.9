@@ -1,6 +1,11 @@
-list_1 = [s for s in range(ord('a'), ord('z'))]
-
-print(list_s)
+x = int(input())
+y = int(input())
+# the variables `x` and `y` are defined, so just print their sum
+z = sum([x,y])
+print(z)
+# list_1 = [s for s in range(ord('a'), ord('z'))]
+#
+# print(list_s)
 
 # def average(values):
 #     """Computes the arithmetic mean of a list of numbers.

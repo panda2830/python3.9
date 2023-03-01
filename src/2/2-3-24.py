@@ -19,7 +19,7 @@ chr() 转换为字符
 """
 
 string_1 = input("输入字符串:")
-number_1 = 5  # 向后移动的位置
+number_1 = 1  # 向后移动的位置
 string_2 = ""
 
 for i in range(len(string_1)):

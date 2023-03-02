@@ -23,20 +23,25 @@ class Test(object):
 
     @num1.setter
     def num1(self, value):
+        print("调用了num1的setter")
         self._num1 = value
 
     @num1.getter
     def num1(self):
+        print("调用了num1的getter")
         return self._num1
 
     def __repr__(self):
         print("{0}类中的_num1为{1}".format(type(self), self._num1))  # 受保护的属性可被本身读取
 
     def __str__(self):
-        return str(self._num1)
+        return f"{self._num1}"
 
 
 if __name__ == "__main__":
     t1 = Test(99)
     # print(t1._num1)  # 错误受保护的属性不可外界读写
     print(t1)
+    print(t1.__repr__())
+    t1.num1 = 123
+    print(f"{t1.num1}")

@@ -1,7 +1,11 @@
 """
-编写一个函数来模拟微信红包金额的分配
+编程题
+"""
 
 """
+编写一个函数来模拟微信红包金额的分配
+"""
+
 # randbelow()方法可生成一个小于n的随机数在secrets模块
 from secrets import randbelow
 

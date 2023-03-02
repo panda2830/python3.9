@@ -1,33 +1,13 @@
 class Test(object):
-    num_1 = 10
-
-    def __init__(self) -> None:
-        self.num2 = None
-
-    @property
-    def num_2(self):
-        """返回num2"""
-        return self.num2
-
-    @num_2.getter
-    def num2(self):
-        print("获取了num2")
-        return self.num2
-
-    @num2.setter
-    def num2(self, value):
-        print("设置num2")
-        self.num2 = value
-
-    @num2.deleter
-    def num2(self):
-        print("删除了num2")
-        del self.num2
+    num1 = 10
+    __num2 = 88  # private 只有以双下划线开头的属性为私有属性
+    __num3__ = 66  # public 以双下划线开头和双下划线结尾的属性为public
+    __num4_ = 33  # private
 
 
 if __name__ == "__main__":
-    t2 = Test()
-    print(t2.num2)
-    t2.num2(123)
-    del t2
+    print(Test.num1)
+    # print(Test.__num2)  # 出错
+    print(Test.__num3__)
+    # print(Test.__num4_)  # 出错
 

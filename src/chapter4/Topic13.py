@@ -2,9 +2,9 @@
 # -*- coding: UTF-8 -*-
 """
 @Project ：python3.9 
-@File    ：4-13.py
+@File    ：chapter4-13.py
 @Author  ：lxy(2305195328@qq.com)
-@Date    ：2023/3/2 20:43 
+@Date    ：2023/chapter3/chapter2 20:43
 """
 
 """
@@ -21,6 +21,8 @@ class Flower(object, metaclass=ABCMeta):
     抽象类：花
     """
 
+    _name: str = "flower"
+
     @abstractmethod
     def __init__(self, colour: str, height: int):
         """
@@ -30,6 +32,14 @@ class Flower(object, metaclass=ABCMeta):
         """
         self.colour = colour
         self.height = height
+
+    @property
+    def name(self):
+        return Flower._name
+
+    @name.getter
+    def name(self):
+        return Flower._name
 
     @abstractmethod
     def display(self):
@@ -44,12 +54,48 @@ class Flower(object, metaclass=ABCMeta):
 class Rose(Flower):
     """
     玫瑰花类
+    有名字，颜色和高度
+    其中名字为rose且不可修改
     """
+    _name = "Rose"
 
     def __init__(self, colour: str, height: int):
+        """
+        :param colour: 颜色str
+        :param height: 高度int
+        """
         super(Rose, self).__init__(colour, height)
-        Flower.name = "玫瑰花"
 
     def display(self):
-        super(Rose, self).display(self)
+        super(Rose, self).display()
         pass
+
+
+class Rose_Chinensis(Flower):
+    """
+    玫瑰花类
+    有名字，颜色和高度
+    其中名字为rose且不可修改
+    """
+
+    _name = "Rose_Chinensis"
+
+    def __init__(self, colour: str, height: int):
+        """
+        :param colour: 颜色str
+        :param height: 高度int
+        """
+        super(Rose_Chinensis, self).__init__(colour, height)
+
+    def display(self):
+        super(Rose_Chinensis, self).display()
+        pass
+
+
+if __name__ == "__main__":
+    rose_1 = Rose("red", 15)
+    rose_2 = Rose("red", 15)
+    rose_3 = Rose("red", 15)
+    rose_list = [rose_1, rose_2, rose_3]
+    rose_chinensis = [x * 0 for x in range(1, 9)]
+

@@ -1,13 +1,13 @@
-# a = [1,2,3]
-# b = [1,2,3]
+# a = [1,chapter2,chapter3]
+# b = [1,chapter2,chapter3]
 # print(a == b)
 # print(a is b)
 # print(id(a))
 # print(id(b))
 
-# print(5//2.5)
-# print(eval('5//2.5'))
-# print("1:{1}\n2:{1}\n3:{0}".format(1,2))
+# print(5//chapter2.5)
+# print(eval('5//chapter2.5'))
+# print("1:{1}\nchapter2:{1}\n3:{0}".format(1,chapter2))
 str = "Python3.9"
 # "{0:30}".format(str)
 print("test01设置宽度为30默认填充空格左对齐:{0:30}\

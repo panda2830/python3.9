@@ -4,6 +4,6 @@
 
 """
 
-# for i in range(3):
-#     for j in range(i,3):
+# for i in range(chapter3):
+#     for j in range(i,chapter3):
 #          print("+", end=')

@@ -3,7 +3,7 @@
 最大公约数和最小公倍数
 """
 number_1 = int(input("输入两个数值,1:"))
-number_2 = int(input("输入两个数值,2:"))
+number_2 = int(input("输入两个数值,chapter2:"))
 max_n = max(number_1, number_2)
 min_n = min(number_1, number_2)
 gcd_n = 0

@@ -26,16 +26,16 @@ B选项为十六进制表示，C为十进制表示，D为二进制表示
 
 """
 以下python语句中错误的是()
-A. [2,3,4][2]=5     B. (2,3,4)[2]=5
-C. {'a',3,}['a']=8  C. {'a':3,}.get('b')
+A. [chapter2,chapter3,chapter4][chapter2]=5     B. (chapter2,chapter3,chapter4)[chapter2]=5
+C. {'a',chapter3,}['a']=8  C. {'a':chapter3,}.get('b')
 答案为B,元组为不可修改
 C的结果为None
 """
 
 """
 以下python表达式返回值为True的是()
-A. 3 and 1 or 4     B. not 0
-C. 3 < 4 > 5        D. 1 not in [1,2,3]
+A. chapter3 and 1 or chapter4     B. not 0
+C. chapter3 < chapter4 > 5        D. 1 not in [1,chapter2,chapter3]
 答案为B
 and和or返回其中的值
 """
@@ -45,8 +45,8 @@ print(3 < 4 > 5)  # 返回False
 print(1 not in [1, 2, 3])  # 返回False
 
 """
-[0, 1, 2, 3][1:3]返回的值是()
-A. [0,1,2,3]    B. [1,2,3]
-C. [1.2]        D. [0,1,2]
+[0, 1, chapter2, chapter3][1:chapter3]返回的值是()
+A. [0,1,chapter2,chapter3]    B. [1,chapter2,chapter3]
+C. [1.chapter2]        D. [0,1,chapter2]
 答案为C，从索引1开始到3之前结束
 """

@@ -1,8 +1,8 @@
-x = int(input())
-y = int(input())
-# the variables `x` and `y` are defined, so just print their sum
-z = sum([x,y])
-print(z)
+# x = int(input())
+# y = int(input())
+# # the variables `x` and `y` are defined, so just print their sum
+# z = sum([x,y])
+# print(z)
 # list_1 = [s for s in range(ord('a'), ord('z'))]
 #
 # print(list_s)
@@ -17,14 +17,14 @@ print(z)
 #
 # def fun(a):
 #     """
-#     a = [1, 2, 3, 4, 5]
-#     >>> print(3*x for x in a if x > 3)
-#     [1, 2, 3, 12, 15]
+#     a = [1, chapter2, chapter3, chapter4, 5]
+#     >>> print(chapter3*x for x in a if x > chapter3)
+#     [1, chapter2, chapter3, 12, 15]
 #     :param a:
 #     :return:
 #
 #     """
-#     print(3 * x for x in a if x > 3)
+#     print(chapter3 * x for x in a if x > chapter3)
 #
 # import doctest
 # doctest.testmod()
@@ -35,3 +35,11 @@ print(z)
 #     print('true')
 # else:
 #     eval(string_1 + " = []")
+
+
+dict1 = {'a':1, 'b':2, 'c':3}
+
+print(dict1)
+for i,j in dict1.items():
+    j = 9
+    print(i,j)

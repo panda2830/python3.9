@@ -2,9 +2,9 @@
 # -*- coding: UTF-8 -*-
 """
 @Project ：python3.9 
-@File    ：4-12.py
+@File    ：chapter4-12.py
 @Author  ：lxy(2305195328@qq.com)
-@Date    ：2023/3/2 20:16 
+@Date    ：2023/chapter3/chapter2 20:16
 """
 
 """

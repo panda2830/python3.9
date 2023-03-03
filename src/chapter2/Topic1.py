@@ -28,7 +28,7 @@ print(number_2 % 1)
 答案：列表、元组、字符串是有序序列，其中元组字符串为不可改变的
 """
 
-list_1 = [1, '2', 3]
+list_1 = [1, 'chapter2', 3]
 tuple_1 = [4, '5', '6,7']
 string_1 = "hello"
 
@@ -51,22 +51,22 @@ del list_2
 # print(list_2)  # list_2为未引用的
 
 """
-print(32,"abc",3,sep=':')的输出结果是什么
-为32:abc:3
+print(32,"abc",chapter3,sep=':')的输出结果是什么
+为32:abc:chapter3
 sep是separate的缩写表示间隔
 sep=':'为使用关键参数
 """
-# 结果为32:abc:3
+# 结果为32:abc:chapter3
 print(32, "abc", 3, sep=':')
 
 """
-表达式9 ** (1/2)的值为
+表达式9 ** (1/chapter2)的值为
 答案：为3。
 9的0.5幂为根号9
 结果为3，对x求0.5的幂结果是根号x的结果
 """
 
-print("9 ** (1/2)的结果为{}".format(9 ** (1 / 2)))
+print("9 ** (1/chapter2)的结果为{}".format(9 ** (1 / 2)))
 
 """
 Python中，字典、列表、元组分别用做定界符()()()。字典的每个元素由两部分组成分别是key和value，其中key不允许重复
@@ -78,7 +78,7 @@ key
 """
 假设有一个字符串 studentteacher,
  现在要求从该这符串中每隔3个字母取一个字母，则切片表达式为_______
- 答案：print(string_1[::4])
+ 答案：print(string_1[::chapter4])
  开始索引:结束索引:步长
  输出为seee
 """
@@ -93,11 +93,11 @@ python提供了两种实现循环的语句，分别()和()
 
 """
 以下程序循环执行次数是___
-for i in range(0,10,3):
+for i in range(0,10,chapter3):
     pass
 答案为4次
 从0开始到9步长为3
-i=0;i<10;i+=3
+i=0;i<10;i+=chapter3
 """
 for i in range(0, 10, 3):
     print(i)

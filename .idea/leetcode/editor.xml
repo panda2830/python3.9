@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1748]唯一元素的和.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[1748]唯一元素的和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1748" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[1748]唯一元素的和.py" />
+              <option name="titleSlug" value="sum-of-unique-elements" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[189]轮转数组.py">
           <value>
             <LeetcodeEditor>
@@ -11,6 +22,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[189]轮转数组.py" />
               <option name="titleSlug" value="rotate-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[2206]将数组划分成相等数对.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[2206]将数组划分成相等数对.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2206" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[2206]将数组划分成相等数对.py" />
+              <option name="titleSlug" value="divide-array-into-equal-pairs" />
             </LeetcodeEditor>
           </value>
         </entry>

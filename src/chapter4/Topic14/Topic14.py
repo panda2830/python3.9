@@ -224,7 +224,7 @@ if __name__ == "__main__":
     file_1 = "test"
     f1 = address_book(file_1)
     # 添加数据
-    value1 = information("小明", 18888888888, "江西南昌", "同学")
+    # value1 = information("小明", 18888888888, "江西南昌", "同学")
     # value2 = information("小王", 26666666666, "江西南昌", "同学")
     # value3 = information("天天", 66688866688, "广东深圳", "老师")
     # f1.insert_information(value1)
@@ -234,11 +234,12 @@ if __name__ == "__main__":
     f1.select_information("小明")
     f1.select_information("小王")
     f1.select_information("天天")
+    f1.select_information("小红")
     # 删除数据
     # f1.delete_information("小明")
     # f1.select_information("小王")
     # 修改数据
-    # f1.update_information("小明")
+    # f1.update_information("小红")
     # f1.select_information("小明")
     # f1.select_information("大明")
     # f1.delete_information("大明")

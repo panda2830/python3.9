@@ -182,22 +182,23 @@ class address_book(object):
         :return:修改成功返回True，修改失败返回False
         """
         try:
+            print(f"开始对{value}进行修改")
             information_1 = self.select_information(value)
             if not information_1.is_empty():
                 # 方便对输入进行检查
-                new_name = input(f"当前名字为{information_1.name}输入新的名字(按回车不修改):").strip()
-                new_number = input(f"当前电话号码为{information_1.number}输入新的电话号码(按回车不修改):").strip()
-                new_address = input(f"当前地址为{information_1.address}输入新的地址(按回车不修改):").strip()
-                new_remark = input(f"当前备注为{information_1.remark}输入新的备注(按回车不修改):").strip()
+                new_name = input(f"当前名字为 {information_1.name} 输入新的名字(按回车不修改):").strip()
+                new_number = input(f"当前电话号码为 {information_1.number} 输入新的电话号码(按回车不修改):").strip()
+                new_address = input(f"当前地址为 {information_1.address} 输入新的地址(按回车不修改):").strip()
+                new_remark = input(f"当前备注为 {information_1.remark} 输入新的备注(按回车不修改):").strip()
                 # 检查
-                # if new_name == "\n":
-                #     new_name = information_1.name
-                # if new_number == "\n":
-                #     new_number = information_1.number
-                # if new_address == "\n":
-                #     new_address = information_1.address
-                # if new_remark == "\n":
-                #     new_remark = information_1.remark
+                if new_name in "\n":
+                    new_name = information_1.name
+                if new_number in "\n":
+                    new_number = information_1.number
+                if new_address in "\n":
+                    new_address = information_1.address
+                if new_remark in "\n":
+                    new_remark = information_1.remark
                 # 写入对象
                 information_1.name = new_name
                 information_1.number = new_number
@@ -206,12 +207,15 @@ class address_book(object):
                 print(f"现在的信息的{information_1}")
                 string_1 = input("是否写入数据Y/N(默认为N):").strip()
                 if string_1 in ("Y", "y", "YES", "yes"):
-                    self.__open_file[value] = information_1
+                    del self.__open_file[value]
+                    self.__open_file[information_1.name] = information_1
                     print("修改成功")
                     return True
                 else:
                     print("修改取消")
                     return False
+            else:
+                print(f"没有{value}的数据")
         except IOError as reason:
             print("写入文件出错" + str(reason))
 
@@ -220,7 +224,7 @@ if __name__ == "__main__":
     file_1 = "test"
     f1 = address_book(file_1)
     # 添加数据
-    # value1 = information("小明", 18888888888, "江西南昌", "同学")
+    value1 = information("小明", 18888888888, "江西南昌", "同学")
     # value2 = information("小王", 26666666666, "江西南昌", "同学")
     # value3 = information("天天", 66688866688, "广东深圳", "老师")
     # f1.insert_information(value1)
@@ -231,9 +235,11 @@ if __name__ == "__main__":
     f1.select_information("小王")
     f1.select_information("天天")
     # 删除数据
-    # f1.delete_information("小王")
+    # f1.delete_information("小明")
     # f1.select_information("小王")
     # 修改数据
-    f1.update_information("小红")
-    f1.select_information("小红")
+    # f1.update_information("小明")
+    # f1.select_information("小明")
+    # f1.select_information("大明")
+    # f1.delete_information("大明")
 

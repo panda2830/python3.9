@@ -37,9 +37,20 @@
 #     eval(string_1 + " = []")
 
 
-dict1 = {'a':1, 'b':2, 'c':3}
+# dict1 = {'a':1, 'b':2, 'c':3}
+#
+# print(dict1)
+# for i,j in dict1.items():
+#     j = 9
+#     print(i,j)
 
-print(dict1)
-for i,j in dict1.items():
-    j = 9
-    print(i,j)
+string_1 = input("是否写入数据Y/N(默认为N):").strip()
+if string_1 in ("Y", "y", "YES", "yes"):
+    print("True")
+    print(string_1)
+elif string_1 in "\n":
+    print("换行")
+    print(string_1)
+else:
+    print("False")
+    print(string_1)

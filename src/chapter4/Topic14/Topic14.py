@@ -37,6 +37,13 @@ class address_book(object):
         list_1 = list(self.__open_file.keys())
         print(f"已经有的记录{list_1}")
 
+    def __del__(self):
+        """
+        析构函数，关闭文件
+        :return:
+        """
+        self.__open_file.close()
+
     def insert_information(self, value: information) -> bool:
         """
         添加一条信息到通讯录，添加成功返回True，添加失败返回False

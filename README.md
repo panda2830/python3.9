@@ -45,6 +45,6 @@
 ### 5-安装python3.9环境
 
 1. 配置完成可运行后回到终端输入`conda clean -i`后按y确认清除索引缓存。
-2. 输入`conda create --name python3.9`创建python3.9环境。
+2. 输入`conda create --name python3.9 python=3.9`创建python3.9环境。
 3. 输入`conda activate python3.9`激活python3.9环境。
 4. 输入`python --version`查看版本，有输出python3.9则为安装成功。

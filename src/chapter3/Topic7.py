@@ -7,7 +7,7 @@
 """
 
 # randbelow()方法可生成一个小于n的随机数在secrets模块
-from secrets import randbelow
+# from secrets import randbelow
 
 # print(randbelow(10))
 
